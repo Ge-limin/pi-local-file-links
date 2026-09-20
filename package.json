@@ -1,0 +1,64 @@
+{
+  "name": "pi-local-file-links",
+  "version": "0.1.0",
+  "description": "Display-only local file links for Pi, without changing model context or session messages.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "terminal",
+    "hyperlinks"
+  ],
+  "files": [
+    "index.js",
+    "links.js",
+    "README.md",
+    "LICENSE",
+    "test",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "scripts"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:pi": "node scripts/test-pi.js"
+  },
+  "dependencies": {
+    "mdast-util-from-markdown": "2.0.3",
+    "mdast-util-gfm": "3.1.0",
+    "micromark-extension-gfm": "3.0.0",
+    "micromark-util-decode-string": "2.0.1"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.86.0 <0.87.0"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  },
+  "author": "Limin Ge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ge-limin/pi-local-file-links.git"
+  },
+  "homepage": "https://github.com/Ge-limin/pi-local-file-links#readme",
+  "bugs": {
+    "url": "https://github.com/Ge-limin/pi-local-file-links/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.86.0"
+  }
+}
