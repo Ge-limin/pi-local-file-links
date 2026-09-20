@@ -42,7 +42,7 @@ pi install git:github.com/Ge-limin/pi-local-file-links@v0.1.0
 
 ## 兼容性与边界
 
-使用 Pi 的 `registerMarkdownTransformer` 接口，已在本机 macOS、**Pi 0.86.0、Node 24** 验证，兼容声明暂限 Pi 0.86.x。作者已在 Warp 中试用。Windows 下停用；CI 配置包含 Linux，但首发前未在本机验证 Linux。
+使用 Pi 的 `registerMarkdownTransformer` 接口，已在本机 macOS、**Pi 0.86.0、Node 24** 验证，兼容声明暂限 Pi 0.86.x。作者已在 Warp 中试用。Windows 下停用。GitHub Actions 中 macOS/Linux × Node 22/24 四组自动测试均已通过；Linux 终端的实际点击行为尚未验证。
 
 终端需支持 OSC 8 超链接和打开 `file://` URL。本扩展不保证打开程序、锚点跳转或源代码行号跳转。
 
