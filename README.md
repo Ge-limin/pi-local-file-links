@@ -43,7 +43,7 @@ It leaves code examples, inline code, raw HTML, bare paths, images, existing URL
 
 ## Compatibility and limits
 
-Uses Pi's `registerMarkdownTransformer` API. Tested with **Pi 0.86.0 and Node 24 on local macOS**; the peer range is limited to 0.86.x. The author has tried it in Warp. Windows is disabled. Automated tests also pass on macOS and Linux with Node 22 and 24 in GitHub Actions; terminal clicks on Linux have not been verified.
+Uses Pi's `registerMarkdownTransformer` API. Tested on local macOS with **Pi 0.86.0 / Node 24 and Pi 0.87.0 / Node 24 and 26**; the peer range covers 0.86.x–0.87.x. The 0.87 checks include restored-history rendering alongside pi-compact-ui 0.1.3. The author previously tried it in Warp; terminal clicks have not been rechecked for 0.87. Windows is disabled. The 0.1.0 release's automated tests also passed on macOS and Linux with Node 22 and 24 in GitHub Actions; Linux terminal clicks have not been verified.
 
 The terminal must support OSC 8 hyperlinks and opening `file://` URLs. The extension does not guarantee which app opens a file, or whether anchors and source line navigation work.
 
